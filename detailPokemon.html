@@ -1,19 +1,11 @@
-<!-- Primeira linha de qualquer doc HTML;
-     Define qual versão do HTML que esta sendo usada;
--->
 <!DOCTYPE html>
-<!-- Tag raiz do doc HTML;
-     Todo conteudo da página deve estar dentro dessa Tag; 
--->
 <html lang="pt-BR">
-<!-- Contém os metadados sobre o doc html;
-     (title, links, styles, scripts...)
--->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex</title>
+    <title>Detalhes do Pokemon</title>
 
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -27,31 +19,21 @@
 
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/global.css">
-    <link rel="stylesheet" href="/assets/css/pokedex.css">
+    <link rel="stylesheet" href="/assets/css/pokemonDetail.css">
+
 </head>
-<!-- Conteúdo principal da página que será visivel para o usuario -->
+
 <body>
-    <section class="content">
-        <!-- Define o cabeçalho;
-            <h1> ao <h6> -> <h1> mais alto, <h6> mais baixo; 
-        -->
-        <h1>Pokedex</h1>
-
-        <ol id="pokemonList" class="pokemons">
-            <!-- ..... Pokemons here ..... -->
-        </ol>
-
-        <div class="pagination">
-            <button id="loadMoreButton" type="button">
-                Load More
-            </button>
+    <section class="contentDetail">
+        <div id="container">
+            <!-- Stats Pokemon-->
         </div>
     </section>
 
     <!-- Nosso JS -->
     <script defer src="/assets/js/pokemon-model.js"></script>
-    <script defer src ="/assets/js/poke-api.js"></script>
-    <script defer src="/assets/js/main.js"></script>
+    <script defer src="/assets/js/poke-api.js"></script>
+    <script defer src="/assets/js/detailsPokemon.js"></script>
 </body>
 
 </html>
